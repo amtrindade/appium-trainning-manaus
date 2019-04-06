@@ -5,8 +5,6 @@ import static com.core.DriverFactory.getDriver;
 import java.time.Duration;
 import java.util.List;
 
-import javax.swing.Scrollable;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 
@@ -43,7 +41,7 @@ public class CoreActivity {
 		return getTextByElement(By.id("android:id/alertTitle"));
 	}
 	
-	private void scrool(Double initial, Double finish) {
+	private void scroll(Double initial, Double finish) {
 		Dimension size = getDriver().manage().window().getSize();
 		
 		int x = size.width / 2;
@@ -58,12 +56,12 @@ public class CoreActivity {
 			.perform();
 	}
 	
-	public void scroolDown() {
-		scrool(0.9, 0.1);
+	public void scrollDown() {
+		scroll(0.9, 0.1);
 	}
 	
-	public void scrooUp() {
-		scrool(0.1, 0.9);
+	public void scrollUp() {
+		scroll(0.1, 0.9);
 	}
 	
 	public boolean existText(String value) {

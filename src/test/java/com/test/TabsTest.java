@@ -14,7 +14,7 @@ public class TabsTest extends CoreTest{
 	
 	@Test
 	public void testValidateActionTabs() {
-		menu.scroolDown();
+		menu.scrollDown();
 		menu.acessaTabs();
 		
 		tabs.selectTabThree();
