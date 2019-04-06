@@ -15,5 +15,9 @@ public class MenuActivity extends CoreActivity{
 	public void acessaTabs() {
 		clickByText("Tabs");
 	}
+	
+	public void acessaClicks() {
+		clickByText("Clicks");
+	}
 
 }
