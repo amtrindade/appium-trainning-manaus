@@ -22,7 +22,10 @@ public class MenuActivity extends CoreActivity{
 
 	public void acessaSplash() {
 		clickByText("Splash");
-		
+	}
+
+	public void acessaAccordion() {
+		clickByText("Accordion");
 	}
 
 }
