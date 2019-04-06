@@ -28,4 +28,9 @@ public class MenuActivity extends CoreActivity{
 		clickByText("Accordion");
 	}
 
+	public void acessaDragAndDrop() {
+		clickByText("Drag and Drop");
+		
+	}
+
 }
