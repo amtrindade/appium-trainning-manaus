@@ -12,4 +12,8 @@ public class MenuActivity extends CoreActivity{
 		clickByText("Dialogs");
 	}
 
+	public void acessaTabs() {
+		clickByText("Tabs");
+	}
+
 }
