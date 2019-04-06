@@ -17,7 +17,7 @@ public class DriverFactory {
 	public static AndroidDriver<MobileElement> getDriver() {
 		if (driver == null) {
 			createDriver(); 
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 		}
 		return driver;
 	}

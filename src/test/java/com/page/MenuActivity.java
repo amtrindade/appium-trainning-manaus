@@ -20,4 +20,9 @@ public class MenuActivity extends CoreActivity{
 		clickByText("Clicks");
 	}
 
+	public void acessaSplash() {
+		clickByText("Splash");
+		
+	}
+
 }
