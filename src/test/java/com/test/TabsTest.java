@@ -25,7 +25,25 @@ public class TabsTest extends CoreTest{
 		
 		tabs.selectTabOne();
 		assertTrue(tabs.existText("ONE SELECTED"));
+	}
+	
+	@Test
+	public void testValidateTextBySwipe() {
+		menu.scrollDown();
+		menu.acessaTabs();
+		assertTrue(tabs.existText("ONE SELECTED"));
 		
+		tabs.swipeRight();
+		assertTrue(tabs.existText("TWO SELECTED"));
+		
+		tabs.swipeRight();
+		assertTrue(tabs.existText("THREE SELECTED"));
+		
+		tabs.swipeLeft();
+		assertTrue(tabs.existText("TWO SELECTED"));
+		
+		tabs.swipeLeft();
+		assertTrue(tabs.existText("ONE SELECTED"));
 	}
 
 }

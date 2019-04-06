@@ -56,6 +56,30 @@ public class CoreActivity {
 			.perform();
 	}
 	
+	private void swipe(Double initial, Double finish) {
+		Dimension size = getDriver().manage().window().getSize();
+		
+		int y = size.height / 2;
+		int xStart = (int)(size.width * initial);
+		int xEnd = (int)(size.width * finish);
+		
+		new TouchAction(getDriver())
+			.press(xStart, y)
+			.waitAction(Duration.ofMillis(500))
+			.moveTo(xEnd, y)
+			.release()
+			.perform();
+			
+	}
+	
+	public void swipeRight() {
+		swipe(0.9, 0.1);
+	}
+	
+	public void swipeLeft() {
+		swipe(0.1, 0.9);
+	}
+	
 	public void scrollDown() {
 		scroll(0.9, 0.1);
 	}
