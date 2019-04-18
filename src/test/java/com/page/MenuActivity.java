@@ -30,7 +30,10 @@ public class MenuActivity extends CoreActivity{
 
 	public void acessaDragAndDrop() {
 		clickByText("Drag and Drop");
-		
+	}
+
+	public void acessaWebView() {
+		clickByText("WebView");
 	}
 
 }
